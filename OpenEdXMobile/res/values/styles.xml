@@ -81,7 +81,6 @@
     </style>
 
     <style name="AppTheme.Launch" parent="AppTheme.NoActionBar">
-        <item name="android:windowBackground">@drawable/launch_background</item>
     </style>
 
     <style name="AppTheme.NoActionBar">

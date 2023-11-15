@@ -4,22 +4,22 @@
     <!--  ** edx Brand Colors ** -->
     <!--  ** Core Colors **  -->
     <!--  Dark 200  -->
-    <color name="primaryXXLightColor">#475B65</color>
+    <color name="primaryXXLightColor">#AAC3E7</color>
     <!--  Primary 300 | Dark 300  -->
-    <color name="primaryXLightColor">#2D494E</color>
+    <color name="primaryXLightColor">#719AD7</color>
     <!--  Dark 400  -->
-    <color name="primaryLightColor">#0E3639</color>
+    <color name="primaryLightColor">#3872C7</color>
     <!--  Primary 500 | Dark 500 | Elm  -->
-    <color name="primaryBaseColor">#00262B</color>
+    <color name="primaryBaseColor">#28528E</color>
     <!--  Primary 700 | Dark 700  -->
-    <color name="primaryDarkColor">#002121</color>
+    <color name="primaryDarkColor">#183155</color>
     <!--  Primary 700 | Dark 700, Opacity 30  -->
     <color name="primaryDarkColor_Opacity_30">#4D002121</color>
 
     <!--  Brand 500  -->
-    <color name="secondaryBaseColor">#D23228</color>
+    <color name="secondaryBaseColor">#FAA95B</color>
     <!--  Brand 700  -->
-    <color name="secondaryDarkColor">#921108</color>
+    <color name="secondaryDarkColor">#EF9245</color>
 
     <!--  Accent A Isotope Blue  -->
     <color name="accentAColor">#03C7E8</color>
@@ -90,17 +90,17 @@
     <color name="errorXDark">#690E07</color>
 
     <!--  Info 100  -->
-    <color name="infoXXLight">#EFF8FA</color>
+    <color name="infoXXLight">#A395DB</color>
     <!--  Info 200  -->
-    <color name="infoXLight">#9CD2E6</color>
+    <color name="infoXLight">#A395DB</color>
     <!--  Info 300  -->
-    <color name="infoLight">#1C8DBE</color>
+    <color name="infoLight">#8068C6</color>
     <!--  Info 500  -->
-    <color name="infoBase">#0A7DA3</color>
+    <color name="infoBase">#6F51B5</color>
     <!--  Info 700  -->
-    <color name="infoDark">#004972</color>
+    <color name="infoDark">#4E359E</color>
     <!--  Info 900  -->
-    <color name="infoXDark">#002F4A</color>
+    <color name="infoXDark">#4E359E</color>
     <!--  ** edx Brand Colors end ** -->
 
     <color name="primaryBaseColor_30">#4D00262B</color>

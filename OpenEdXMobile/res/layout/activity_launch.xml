@@ -7,15 +7,13 @@
         android:id="@+id/rl_root"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:splitMotionEvents="false"
-        tools:background="@drawable/launch_background">
+        android:splitMotionEvents="false">
 
         <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/edx_logo"
-            android:layout_width="wrap_content"
+            android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="@dimen/edx_quadruple_margin"
             android:contentDescription="@string/phonetic_app_name"
             app:srcCompat="@drawable/launch_screen_logo" />
 
@@ -56,7 +54,7 @@
                 android:focusable="true"
                 android:gravity="center"
                 android:text="@string/already_have_an_account"
-                android:textColor="@android:color/white"
+                android:textColor="@color/secondaryBaseColor"
                 android:textSize="@dimen/edx_medium" />
         </LinearLayout>
 
