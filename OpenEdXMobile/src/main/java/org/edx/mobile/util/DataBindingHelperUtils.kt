@@ -129,6 +129,8 @@ class DataBindingHelperUtils {
                         bulletView.background = ContextCompat.getDrawable(bulletView.context, R.drawable.black_circle)
                     }
                 }
+
+                else -> {}
             }
         }
 
