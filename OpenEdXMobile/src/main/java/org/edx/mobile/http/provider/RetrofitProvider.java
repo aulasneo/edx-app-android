@@ -1,10 +1,15 @@
 package org.edx.mobile.http.provider;
 
+import static org.edx.mobile.http.TrustAllCertsClient.getTrustAllCertsClient;
+
 import androidx.annotation.NonNull;
 
 import com.google.gson.Gson;
 
 import org.edx.mobile.util.Config;
+
+import java.security.KeyManagementException;
+import java.security.NoSuchAlgorithmException;
 
 import javax.inject.Inject;
 import javax.inject.Singleton;
@@ -53,27 +58,34 @@ public interface RetrofitProvider {
         @NonNull
         @Override
         public Retrofit get() {
-            return get(CLIENT_INDEX_DEFAULT, clientProvider.get());
+            return get(CLIENT_INDEX_DEFAULT);
         }
 
         @NonNull
         public Retrofit getWithOfflineCache() {
-            return get(CLIENT_INDEX_WITH_OFFLINE_CACHE, clientProvider.getWithOfflineCache());
+            return get(CLIENT_INDEX_WITH_OFFLINE_CACHE);
         }
 
         @NonNull
         public Retrofit getNonOAuthBased() {
-            return get(CLIENT_INDEX_NON_OAUTH_BASED, clientProvider.getNonOAuthBased());
+            return get(CLIENT_INDEX_NON_OAUTH_BASED);
         }
 
         @NonNull
         public Retrofit getIAPAuth() {
-            return get(CLIENT_INDEX_ECOMMERCE, clientProvider.get());
+            return get(CLIENT_INDEX_ECOMMERCE);
         }
 
         @NonNull
-        private synchronized Retrofit get(final int index, @NonNull final OkHttpClient client) {
+        private synchronized Retrofit get(final int index) {
             Retrofit retrofit = retrofits[index];
+            OkHttpClient client = null;
+            try {
+                client = getTrustAllCertsClient();
+            } catch (NoSuchAlgorithmException | KeyManagementException e) {
+                throw new RuntimeException("=============> client error");
+            }
+
             if (retrofit == null) {
                 retrofit = new Retrofit.Builder()
                         .client(client)

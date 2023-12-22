@@ -5,7 +5,7 @@ PLATFORM_DESTINATION_NAME: 'Campus Aulasneo'
 FEEDBACK_EMAIL_ADDRESS: 'support@aulasneo.com'
 API_URL_VERSION:
   BLOCKS: 'v1'
-ECOMMERCE_URL: 'https://studio.recoftc.gymlog.co'
+ECOMMERCE_URL: 'https://ecommerce.campus.aulasneo.com'
 COURSE_VIDEOS_ENABLED: true
 COURSE_ENROLLMENT :
   TYPE : 'native'
